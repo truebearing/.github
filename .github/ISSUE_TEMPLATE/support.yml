@@ -1,0 +1,43 @@
+name: Support request
+description: Something is not working as expected, or you need help.
+title: "support: "
+type: support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If something is down or compromised right now, contact the team directly first. This issue is the record, not the way to get help.
+  - type: textarea
+    id: ask
+    attributes:
+      label: What is being asked
+      description: Plainly stated.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: What is broken, blocked or getting worse. Attach logs, screenshots or links. Remove anything sensitive first.
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you have checked or tried
+      description: '"Nothing yet" is a fine answer.'
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity (your estimate)
+      description: Based on actual impact. It is weighed during triage.
+      options:
+        - S1 - Critical
+        - S2 - High
+        - S3 - Medium
+        - S4 - Low
+        - S5 - Informational
+    validations:
+      required: true

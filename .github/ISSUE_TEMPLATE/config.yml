@@ -1,0 +1,3 @@
+# Blank issues are off so every issue uses a form. The forms set an issue type (an organization
+# level setting) and not labels, because a label named in a form must exist in every repository.
+blank_issues_enabled: false
