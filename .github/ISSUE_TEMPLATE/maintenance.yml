@@ -1,0 +1,38 @@
+name: Maintenance request
+description: Routine upkeep such as updates, security hygiene, standards drift or operations.
+title: "maintenance: "
+type: maintenance
+body:
+  - type: textarea
+    id: ask
+    attributes:
+      label: What needs to be done
+    validations:
+      required: true
+  - type: textarea
+    id: deferral
+    attributes:
+      label: What happens if it waits
+      description: A deadline, a risk or a compliance driver, if there is one.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity (your estimate)
+      options:
+        - S1 - Critical
+        - S2 - High
+        - S3 - Medium
+        - S4 - Low
+        - S5 - Informational
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: How we will know it is finished.
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
