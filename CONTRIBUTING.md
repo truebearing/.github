@@ -16,6 +16,6 @@ Conventional Commits drive versioning and changelogs. Allowed types: `feat`, `fi
 ## Pull requests
 
 - Required checks pass.
-- At least one review. Changes to automation or container definitions need a code owner review.
+- No approval is required while the organization has one maintainer, because nobody can approve their own pull request. With a second maintainer, a repository requires one review, and changes to automation or container definitions need a code owner review.
 - Keep the change focused. Unrelated cleanups go in their own pull request.
 - Never commit secrets, credentials or tokens. If one is committed by mistake, treat it as exposed and rotate it.
