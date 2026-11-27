@@ -2,7 +2,7 @@
 
 What changes and why.
 
-Issue or ticket: <!-- number and link -->
+Ticket (external tracker, if any): <!-- link -->
 
 ### Security Testing
 
